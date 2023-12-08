@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "microgrid"
+version = "0.0.1"
+description = ""
+dependencies = [
+    "pymgrid ==1.2.2",
+    "ipython ==8.18.1",
+]
+
+[project.scripts]
+microgrid = "microgrid.main:main"
